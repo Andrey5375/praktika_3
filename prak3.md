@@ -114,7 +114,6 @@ local student(age, groupName, name) = {
   subject: "Конфигурационное управление",
 }
 ```
-![image](https://github.com/user-attachments/assets/bb0a770f-3d62-47a5-af50-a5a071a49f25)
 
 ## Задача 2
 
