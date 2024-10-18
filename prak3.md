@@ -281,38 +281,3 @@ for i in range(7):
 ```
 ![image](https://github.com/user-attachments/assets/beb8a4f2-eb08-49af-8441-26450eda7da4)
 
-## Задача 5
-
-Язык выражений алгебры логики.
-```
-import random
-def parse_bnf(text):
-    '''
-    Преобразовать текстовую запись БНФ в словарь.
-    '''
-    grammar = {}
-    rules = [line.split('=') for line in text.strip().split('\n')]
-    for name, body in rules:
-        grammar[name.strip()] = [alt.split() for alt in body.split('|')]
-    return grammar
-
-def generate_phrase(grammar, start):
-    '''
-    Сгенерировать случайную фразу.
-    '''
-    if start in grammar:
-        seq = random.choice(grammar[start])
-        return ''.join([generate_phrase(grammar, name) for name in seq])
-    return str(start)
-
-BNF = '''
-S = E
-E = E & U | E | U
-U = U | F | ~U | ( E )
-F = x | y
-'''
-
-for i in range(5):
-    print(generate_phrase(parse_bnf(BNF), 'S'))
-```
-![image](https://github.com/user-attachments/assets/8545f865-b7a6-4ea5-83ef-dadeeaf750f3)
