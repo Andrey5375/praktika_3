@@ -269,14 +269,14 @@ def generate_phrase(grammar, start):
 
 BNF = '''
 S = A | B | C
-A = ( S ) | { S } | 俄国
+A = ( S ) | { S } | (K)
 B = ( A ) | { A }
-C = 俄国
+C = (H)
 '''
 
 for i in range(7):
     print(generate_phrase(parse_bnf(BNF), 'S'))
 
 ```
-![image](https://github.com/user-attachments/assets/beb8a4f2-eb08-49af-8441-26450eda7da4)
+![image](https://github.com/user-attachments/assets/b0f424e2-4ecd-4cb3-b28d-9b31b3428bce)
 
