@@ -233,18 +233,15 @@ def generate_phrase(grammar, start):
     return str(start)
 
 BNF = '''
-S = A | B | C | D 
-A = 1 | 1 A | 0 B
-B = 1 | 0 B
-C = 1 1
-D = 1 1 0 1
+S = B | B S 
+B = 0 | 1 
 '''
 
 for i in range(5):
     print(generate_phrase(parse_bnf(BNF), 'S'))   
 ```
 
-![image](https://github.com/user-attachments/assets/9b56953c-26b4-4d7a-b194-eba375309ddb)
+![image](https://github.com/user-attachments/assets/f33bcaa5-afc4-4e9e-b2b9-eea62cb2566c)
 
 ## Задача 4
 
