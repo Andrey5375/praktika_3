@@ -280,3 +280,10 @@ for i in range(7):
 ```
 ![image](https://github.com/user-attachments/assets/b0f424e2-4ecd-4cb3-b28d-9b31b3428bce)
 
+
+
+## Задача 5
+
+Язык выражений алгебры логики.
+```
+
