@@ -206,7 +206,7 @@ students:
     name: "Озеров А.В."
 subject: "Конфигурационное управление"
 ```
-
+![image](https://github.com/user-attachments/assets/5dfe54c9-955a-45d3-a5a7-d63a01cc0c75)
 ## Задача 3
 
 Язык нулей и единиц.
